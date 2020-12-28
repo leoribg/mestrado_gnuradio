@@ -24,7 +24,7 @@ import time
 
 class power_final(gr.top_block):
 
-    def __init__(self, bw=200000, center_freq=902200000, filename='/home/leo/mestrado/teste.txt', samp_rate=1000000):
+    def __init__(self, bw=50000, center_freq=902200000, filename='/home/leo/mestrado/teste.txt', samp_rate=1000000):
         gr.top_block.__init__(self, "Not titled yet")
 
         ##################################################
@@ -55,13 +55,13 @@ class power_final(gr.top_block):
 
         self.limesdr_source_0.set_center_freq(center_freq, 0)
 
-        self.limesdr_source_0.set_bandwidth(1.5e6, 0)
+        self.limesdr_source_0.set_bandwidth(100e3, 0)
 
 
         self.limesdr_source_0.set_digital_filter(samp_rate, 0)
 
 
-        self.limesdr_source_0.set_gain(40, 0)
+        self.limesdr_source_0.set_gain(20, 0)
 
 
         self.limesdr_source_0.set_antenna(255, 0)
@@ -77,7 +77,7 @@ class power_final(gr.top_block):
                 bw/10,
                 firdes.WIN_HAMMING,
                 6.76))
-        self.filerepeater_VectorToTxtFile_0 = filerepeater.VectorToTxtFile(filename, 1, 1, samp_rate, '', True, 0.1, 2, False)
+        self.filerepeater_VectorToTxtFile_0 = filerepeater.VectorToTxtFile(filename, 1, 1, samp_rate, '', True, 0.01, 2, False)
         self.blocks_nlog10_ff_0 = blocks.nlog10_ff(10, 1, 0)
         self.blocks_moving_average_xx_0 = blocks.moving_average_ff(50000, 20e-6, 4000, 1)
         self.blocks_complex_to_mag_squared_0 = blocks.complex_to_mag_squared(1)
@@ -132,7 +132,7 @@ class power_final(gr.top_block):
 def argument_parser():
     parser = ArgumentParser()
     parser.add_argument(
-        "--bw", dest="bw", type=eng_float, default="200.0k",
+        "--bw", dest="bw", type=eng_float, default="100.0k",
         help="Set bw [default=%(default)r]")
     parser.add_argument(
         "--center-freq", dest="center_freq", type=eng_float, default="902.2M",

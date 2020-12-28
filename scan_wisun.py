@@ -9,7 +9,8 @@ for i in range (9022, 9280, 2):
     if (i < 9075 or i > 9150) :
         s = "python power_final.py --center-freq=" + str(i * 100000) + " --filename=" + str(i) + ".txt"
         print(s)
-    
+        s = "LimeQuickTest"
+        print(s)
 
     #if(i < 9075 or i > 9150):
         #s = "timeout 14 python teste_leo.py --center-freq=" + str(i * 100000) + " --filename=" + str(i) + ".txt"
