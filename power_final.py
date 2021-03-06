@@ -24,7 +24,7 @@ import time
 
 class power_final(gr.top_block):
 
-    def __init__(self, bw=50000, center_freq=902200000, filename='/home/leo/mestrado/teste.txt', samp_rate=1000000):
+    def __init__(self, bw=2000000, center_freq=902200000, filename='/home/leo/mestrado/teste.txt', samp_rate=1000000):
         gr.top_block.__init__(self, "Not titled yet")
 
         ##################################################
