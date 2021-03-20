@@ -1,3 +1,6 @@
+rm *.txt
+source ~/gnuradio/setup_env.sh
+
 python power_final.py --center-freq=2402000000 --filename=2402.txt
 LimeQuickTest
 python power_final.py --center-freq=2404000000 --filename=2404.txt

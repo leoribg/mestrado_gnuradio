@@ -24,7 +24,7 @@ import time
 
 class power_final(gr.top_block):
 
-    def __init__(self, bw=2000000, center_freq=902200000, filename='/home/leo/mestrado/teste.txt', samp_rate=4000000):
+    def __init__(self, bw=50000, center_freq=902200000, filename='/home/leo/mestrado/teste.txt', samp_rate=4000000):
         gr.top_block.__init__(self, "Not titled yet")
 
         ##################################################
@@ -132,7 +132,7 @@ class power_final(gr.top_block):
 def argument_parser():
     parser = ArgumentParser()
     parser.add_argument(
-        "--bw", dest="bw", type=eng_float, default="2M",
+        "--bw", dest="bw", type=eng_float, default="1M",
         help="Set bw [default=%(default)r]")
     parser.add_argument(
         "--center-freq", dest="center_freq", type=eng_float, default="902.2M",
