@@ -45,7 +45,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [687, 249]
+    coordinate: [642, 220]
     rotation: 0
     state: true
 - name: blocks_moving_average_xx_0
@@ -65,7 +65,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [891, 188]
+    coordinate: [52, 401]
     rotation: 0
     state: true
 - name: blocks_nlog10_ff_0
@@ -83,7 +83,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1114, 242]
+    coordinate: [288, 425]
     rotation: 0
     state: true
 - name: bw
@@ -100,7 +100,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [535, 14]
+    coordinate: [451, 9]
     rotation: 0
     state: enabled
 - name: center_freq
@@ -117,7 +117,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [311, 14]
+    coordinate: [205, 9]
     rotation: 0
     state: enabled
 - name: filename
@@ -134,7 +134,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [626, 14]
+    coordinate: [542, 12]
     rotation: 0
     state: enabled
 - name: filerepeater_VectorToTxtFile_0
@@ -156,7 +156,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1270, 175]
+    coordinate: [414, 369]
     rotation: 0
     state: true
 - name: high_pass_filter_0
@@ -180,7 +180,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [253, 170]
+    coordinate: [229, 168]
     rotation: 0
     state: enabled
 - name: limesdr_source_0
@@ -239,7 +239,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [466, 185]
+    coordinate: [430, 168]
     rotation: 0
     state: enabled
 - name: samp_rate
@@ -256,7 +256,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [422, 14]
+    coordinate: [328, 9]
     rotation: 0
     state: enabled
 
